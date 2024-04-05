@@ -29,12 +29,12 @@ sqs.secretKey=
 sqs.accessKey=
 sqs.queueName=
 sqs.region=
-```
 
 $ oc create secret generic aws-creds --from-file=aws-creds.properties
 ```
 
 ```shell
+
 # Create KameletBinding
 $ cat <<EOF | oc apply -f -
 apiVersion: camel.apache.org/v1alpha1
